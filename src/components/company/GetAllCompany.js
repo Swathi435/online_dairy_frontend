@@ -36,13 +36,16 @@ const GetAllCompany = () => {
         <div>
             <h1 className="display-4 text-primary mt-3 mb-3" >All Company Details</h1>
             <div>
-                <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
+                {/* <div className="col-6 border border-light shadow p-3 mb-5 bg-white"> */}
+                <i class="fas fa-user"/>
                     <p>List of all Company</p>
                     <div>
                         <form className="form form-group form-primary">
                             <input className="mt-3 btn btn-primary btn-block" type="button" onClick={submitGetAllCompany} value="Find All Companies" />
                         </form>
                     </div >
+                    {/* <table className="table table-condensed table-sm table-light table-hover table-striped text-center border-warning">
+                                    <thead className="table table-warning"></thead> */}
                     <table className="table table-light table-striped ">
                         <thead>
                             <tr>
@@ -62,7 +65,7 @@ const GetAllCompany = () => {
                             })}
                         </tbody>
                     </table>
-                </div>
+                {/* </div> */}
             </div>
             </div>
     );

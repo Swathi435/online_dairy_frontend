@@ -94,7 +94,7 @@ const AddFarmer = () => {
                 onClick={submitAddFarmer}
             />
         </div>
-        <p>New Farmer Data: {displayFarmerObj.farmerId} {displayFarmerObj.firstName} {displayFarmerObj.lastName}{displayFarmerObj.mobileNumber}{displayFarmerObj.email}</p>
+        {/* <p>New Farmer Data: {displayFarmerObj.farmerId} {displayFarmerObj.firstName} {displayFarmerObj.lastName}{displayFarmerObj.mobileNumber}{displayFarmerObj.email}</p> */}
     </div>
 
     );

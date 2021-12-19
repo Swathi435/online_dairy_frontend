@@ -103,16 +103,16 @@ const AddCustomer = () => {
                     {/* <input className="form-control mt-3" type="number" id="AddCustomer" name="AddCustomer" value={AddCustomer} onChange={handleAddCustomer} placeholder="Add Customer" autoFocus required /> */}
                     <input className="form-control mt-3 btn btn-primary" type="submit" value="Add Customer" />
                 </form>
-            </div>
+         </div>
            
-            <p>New Customer Data:<p/> 
+            {/* {/* <p>New Customer Data:<p/> 
             <p>CustomerId:{displayCustomerObj.customerId}</p> 
             <p>FirstName:{displayCustomerObj.firstName}</p>  
             <p>LastName:{displayCustomerObj.lastName}</p>
             {/* <p>Password:{displayCustomerObj.password}</p> */}
-            <p>MobileNumber:{displayCustomerObj.mobileNumber}</p>
-            <p>Email:{displayCustomerObj.email}</p></p>
-        </div>
+            {/* <p>MobileNumber:{displayCustomerObj.mobileNumber}</p>
+            <p>Email:{displayCustomerObj.email}</p></p> */}
+        </div>  
         </div>
 
         

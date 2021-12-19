@@ -38,8 +38,9 @@ const Header = () => {
                                     </li>
 
                                     <div class="dropdown">
+                                        
                                         <button class="dropbtn">Company</button>
-                                        <div class="dropdown-content">
+                                        <div    class="dropdown-content">
 
                                             <Link className="nav-link" to="/addcompany">AddCompany</Link>
                                             <Link className="nav-link" to="/deletecompany">Delete Company</Link>
@@ -159,7 +160,7 @@ const Header = () => {
                                         <Link className="nav-link" to="/customerpaybilltodealer" >PayToDealer</Link>
                                     </li>
                                     <div class="dropdown">
-                                        <button class="dropbtn">Company</button>
+                                        <button class="dropbtn">Customer</button>
                                         <div class="dropdown-content">
                                             <Link className="nav-link" to="/addcustomer">AddCustomer</Link>
                                             <Link className="nav-link" to="/deletecustomer">DeleteCustomer</Link>

@@ -1,24 +1,15 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
-import { getAllCompanyService, getCompanyByIdService, insertCompanyService } from "../services/CompService";
+
 import axios from "axios";
 import Company from "../models/Company";
-import { deletecompanyById, getAllCompany, getcompanyById, insertcompany, updatecompany } from "../../redux/CompSlice";
 
 
 const AddCompany = () => {
-
-
-    const dispatch = useDispatch();
-
-
-    const [newCompanyObj, setNewCompanyObj] = useState(new Company());
-    // const [updtCompanyObj, setUpdtCompanyObj] = useState(new Company());
-    const [displayCompanyObj, setDisplayCompanyObj] = useState(new Company());
-    // const [updateCompanyObj, setUpdateCompanyObj] = useState(new Company());
-    // const [deleteCompany, setDeleteCompany] = useState('');
-    // const companyDelete = useSelector((state) => state.company.companyDelete);
-
+const dispatch = useDispatch();
+ const [newCompanyObj, setNewCompanyObj] = useState(new Company());
+    const [ setDisplayCompanyObj] = useState(new Company());
+    
     const handleAddCompany = (e) => {
         console.log(e.target.value);
         setNewCompanyObj({
@@ -43,13 +34,23 @@ const AddCompany = () => {
     }
 
     return (
-        <div>
-            <h1 className="display-4 text-primary mt-3 mb-3" >Add Company</h1>
-            <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
+        <div align="center"
+        style={{
 
-                <p>Add New Company</p>
+backgroundImage: "url(" + "  https://media.istockphoto.com/photos/american-country-farm-picture-id177505798?k=20&m=177505798&s=612x612&w=0&h=jFgHLVyAgTQ7DtPF81OqgygnDI4faMQ3RzvYz6PLozs=" + ")",
 
-                <div id="addNewCompanyDiv">
+backgroundPosition: 'center',
+
+backgroundSize: 'cover',
+
+backgroundRepeat: 'no-repeat'
+
+}}>
+            <h1 className="display-4 text mt-3 mb-5"  >Add Company  </h1>
+            <div className="col-6 "  >
+             <p>Add New Company</p>
+
+                <div size="" id="addNewCompanyDiv">
                     <input
                         type="text"
                         id="companyName"
@@ -106,17 +107,17 @@ const AddCompany = () => {
                         // onClick={submitAddCompany} 
                         
                     /> */}
-                    <form className="form form-group form-primary">
+                    <form className="form form-group form-primary" >
                         <input className="mt-3 btn btn-primary btn-block" type="button" onClick={submitAddCompany} value="Add Company" />
                     </form>
-                </div>
+                 </div>
 
-                <p>Company Name: {displayCompanyObj.companyName}<br /></p>
-                <p>email: {displayCompanyObj.email}<br /></p>
-                <p>mobileNumber: {displayCompanyObj.mobileNumber}<br /></p>
+                {/* <p>Company Name: {displayCompanyObj.companyName}<br /></p>
+                <p>email: {displayCompanyObj.email}<br /></p> */}
+                {/* <p>mobileNumber: {displayCompanyObj.mobileNumber}<br /></p> */}
                 {/* <p>password: {displayCompanyObj.password} <br/></p> */}
-                <p>address: {displayCompanyObj.address}</p>
-            </div>
+                {/* <p>address: {displayCompanyObj.address}</p> */}
+            </div> 
         </div>
     );
 }

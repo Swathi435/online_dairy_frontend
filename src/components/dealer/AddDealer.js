@@ -89,9 +89,9 @@ const AddDealer = () => {
                 value="Add Dealer"
                 onClick={submitinsertDealer}
             />
-        </div>
-        <p>New Dealer Data: {displayDealerObj.DealerId} {displayDealerObj.firstName} {displayDealerObj.lastName}{displayDealerObj.mobileNumber}{displayDealerObj.email}</p>
-        </div>
+        </div> 
+         {/* <p>New Dealer Data: {displayDealerObj.DealerId} {displayDealerObj.firstName} {displayDealerObj.lastName}{displayDealerObj.mobileNumber}{displayDealerObj.email}</p> */}
+        </div> 
         </div>
         );
 }

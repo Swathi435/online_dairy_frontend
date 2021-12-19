@@ -34,6 +34,10 @@ import GetDealerById from './components/dealer/GetDealerById';
 import DealerSellMilkToCustomer from './components/dealer/DealerSellMilkToCustomer';
 import DealerPayBillToCompany from './components/dealer/DealerPayBillToCompany';
 import GetAllDealerSellOrders from './components/dealer/GetAllDealerSellOrders';
+//login-----------------------------------
+import Login from './components/Login';
+import Register from './components/Register';
+
 
 // Company test cases-----------------------------
 beforeAll(() => {
@@ -310,8 +314,27 @@ test('render Data from  Find All sell orders', () => {
   const linkElement = screen.getByText('Find All sell orders');
   expect(linkElement).toBeInTheDocument();
 });
-
+// login------------------------------------------------------
  
+// test('render Data from  Login', () => {
+   
+//   render(
+//     <Provider store={store} >
+//        <Login/>
+//     </Provider>)
+//   const linkElement = screen.getByText('Login');
+//   expect(linkElement).toBeInTheDocument();
+// });
+
+// test('render Data from  Register', () => {
+   
+//   render(
+//     <Provider store={store} >
+//        <Register/>
+//     </Provider>)
+//   const linkElement = screen.getByText('Register');
+//   expect(linkElement).toBeInTheDocument();
+// });
 
 
 
