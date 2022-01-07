@@ -11,7 +11,7 @@ const CompanyBuySlice = createSlice({
     },
 
     reducers:{
-        companyBuysMilkData:(state,action) => {
+        companyBuyMilk:(state,action) => {
             console.log('CompanyBuySlice reducers Buymilk');
             state.customerList=action.payload;
         }
@@ -19,6 +19,6 @@ const CompanyBuySlice = createSlice({
 
 });
 
-export const {companyBuysMilkData}=CompanyBuySlice.actions;
+export const {companyBuysMilk}=CompanyBuySlice.actions;
 
 export default CompanyBuySlice.reducer;

@@ -21,7 +21,7 @@ const dispatch = useDispatch();
     const submitAddCompany = (evt) => {
         evt.preventDefault();
         console.log('addCompany');
-        axios.post(`http://localhost:8082/company/add`, newCompanyObj)
+        axios.post(`/company/add`, newCompanyObj)
             .then((response) => {
                 setDisplayCompanyObj(response.data);
                 alert('Company added successfully.');
